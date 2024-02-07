@@ -58,7 +58,7 @@
         android:elevation="6dp"
         android:ems="10"
         android:fontFamily="@font/kurale"
-        android:hint="Username"
+        android:hint="Email"
         android:inputType="text"
         android:paddingStart="18dp"
         android:shadowDy="4"
