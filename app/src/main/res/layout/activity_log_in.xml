@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/logInPassword"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginTop="32dp"
@@ -42,13 +42,13 @@
         android:paddingStart="18dp"
         android:shadowDy="4"
         android:textColorHint="@color/hint_color"
-        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="@+id/logInEmail"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/username"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintStart_toStartOf="@+id/logInEmail"
+        app:layout_constraintTop_toBottomOf="@+id/logInEmail" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/logInEmail"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginStart="17.5dp"
@@ -77,8 +77,8 @@
         android:text="Do you forgot your password ?"
         android:textColor="@color/black"
         android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/password"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintStart_toStartOf="@+id/logInPassword"
+        app:layout_constraintTop_toBottomOf="@+id/logInPassword" />
 
     <Button
         android:id="@+id/btn_LogIn"
@@ -91,12 +91,12 @@
         android:textSize="20sp"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnSigup"
+        app:layout_constraintEnd_toStartOf="@+id/btnSignup"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnSigup"
+        android:id="@+id/btnSignup"
         android:layout_width="160dp"
         android:layout_height="60dp"
         android:layout_marginBottom="20dp"
