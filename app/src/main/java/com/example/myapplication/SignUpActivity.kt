@@ -29,10 +29,10 @@ class SignUpActivity : AppCompatActivity() {
 
         binding.apply {
             binding.btnSignUp.setOnClickListener {
-                val name = name.text.toString()
-                val email = email.text.toString()
-                val password = Password.text.toString()
-                val rePassword = rePassword.text.toString()
+                val name = etName.text.toString()
+                val email = etEmail.text.toString()
+                val password = etPassword.text.toString()
+                val rePassword = etRePassword.text.toString()
 
                 if (name.isEmpty() && email.isEmpty() && password.isEmpty() && rePassword.isEmpty()) {
                     Toast.makeText(
@@ -50,6 +50,10 @@ class SignUpActivity : AppCompatActivity() {
                     auth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener { task ->
                             if (task.isSuccessful) {
+                                etName.text?.clear()
+                                etEmail.text?.clear()
+                                etPassword.text?.clear()
+                                etRePassword.text?.clear()
                                 Toast.makeText(
                                     this@SignUpActivity,
                                     "Registration is Successful",
